@@ -1,20 +1,52 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <script language="javascript">
-            var n1 = parseInt(window.prompt("Enter first number"));
-            var n2 = parseInt(window.prompt("Enter second number"));
+<head>
+    <title>Arithmetic Operations</title>
+</head>
+<body>
 
-            var r1 = n1 + n2;
-            var r2 = n1 - n2;
-            var r3 = n1 * n2;
-            var r4 = n1 / n2;
+<h2>Arithmetic Operations</h2>
 
-            document.write("<h1>Addition: " + r1 + "</h1>");
-            document.write("<h1>Subtraction: " + r2 + "</h1>");
-            document.write("<h1>Multiplication: " + r3 + "</h1>");
-            document.write("<h1>Division: " + r4 + "</h1>");
-        </script>
-    </head>
-    <body>
-    </body>
+Number 1:
+<input type="number" id="n1"><br><br>
+
+Number 2:
+<input type="number" id="n2"><br><br>
+
+<button onclick="add()">Add</button>
+<button onclick="sub()">Subtract</button>
+<button onclick="mul()">Multiply</button>
+<button onclick="div()">Divide</button>
+
+<br><br>
+Result:
+<input type="text" id="result">
+
+<script>
+function add() {
+    var a = Number(document.getElementById("n1").value);
+    var b = Number(document.getElementById("n2").value);
+    document.getElementById("result").value = a + b;
+}
+
+function sub() {
+    var a = Number(document.getElementById("n1").value);
+    var b = Number(document.getElementById("n2").value);
+    document.getElementById("result").value = a - b;
+}
+
+function mul() {
+    var a = Number(document.getElementById("n1").value);
+    var b = Number(document.getElementById("n2").value);
+    document.getElementById("result").value = a * b;
+}
+
+function div() {
+    var a = Number(document.getElementById("n1").value);
+    var b = Number(document.getElementById("n2").value);
+    document.getElementById("result").value = a / b;
+}
+</script>
+
+</body>
 </html>
