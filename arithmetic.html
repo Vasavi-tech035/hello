@@ -8,15 +8,15 @@
 <h2>Arithmetic Operations</h2>
 
 Number 1:
-<input type="number" id="n1"><br><br>
+<input type="text" id="n1"><br><br>
 
 Number 2:
-<input type="number" id="n2"><br><br>
+<input type="text" id="n2"><br><br>
 
-<button onclick="add()">Add</button>
-<button onclick="sub()">Subtract</button>
-<button onclick="mul()">Multiply</button>
-<button onclick="div()">Divide</button>
+<button type="button" onclick="add()">Add</button>
+<button type="button" onclick="sub()">Subtract</button>
+<button type="button" onclick="mul()">Multiply</button>
+<button type="button" onclick="div()">Divide</button>
 
 <br><br>
 Result:
@@ -24,26 +24,26 @@ Result:
 
 <script>
 function add() {
-    var a = Number(document.getElementById("n1").value);
-    var b = Number(document.getElementById("n2").value);
+    var a = parseFloat(document.getElementById("n1").value);
+    var b = parseFloat(document.getElementById("n2").value);
     document.getElementById("result").value = a + b;
 }
 
 function sub() {
-    var a = Number(document.getElementById("n1").value);
-    var b = Number(document.getElementById("n2").value);
+    var a = parseFloat(document.getElementById("n1").value);
+    var b = parseFloat(document.getElementById("n2").value);
     document.getElementById("result").value = a - b;
 }
 
 function mul() {
-    var a = Number(document.getElementById("n1").value);
-    var b = Number(document.getElementById("n2").value);
+    var a = parseFloat(document.getElementById("n1").value);
+    var b = parseFloat(document.getElementById("n2").value);
     document.getElementById("result").value = a * b;
 }
 
 function div() {
-    var a = Number(document.getElementById("n1").value);
-    var b = Number(document.getElementById("n2").value);
+    var a = parseFloat(document.getElementById("n1").value);
+    var b = parseFloat(document.getElementById("n2").value);
     document.getElementById("result").value = a / b;
 }
 </script>
